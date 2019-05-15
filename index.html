@@ -1,136 +1,102 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)https://blackrockdigital.github.io/startbootstrap-new-age/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <title>New Age - Start Bootstrap Theme</title>
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-  <!-- Bootstrap core CSS -->
-  <link href="./bootstrap.min.css" rel="stylesheet">
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
 
-  <!-- Custom fonts for this template -->
-  <link href="./all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./simple-line-icons.css">
-  <link href="./css(1)" rel="stylesheet">
-  <link href="./css(2)" rel="stylesheet">
-  <link href="./css(3)" rel="stylesheet">
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="./device-mockups.min.css">
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
 
-  <!-- Custom styles for this template -->
-  <link href="./new-age.min.css" rel="stylesheet">
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
+<body>
 
-<body id="page-top">
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
 
-  <!-- Navigation -->
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
   
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
 
-  
+<footer>
+  <p>Footer</p>
+</footer>
 
-  
-
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2>Unlimited Features, Unlimited Fun</h2>
-        <p class="text-muted">Check out what you can do with this app theme!</p>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="./demo-screen-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 my-auto">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>Device Mockups</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-camera text-primary"></i>
-                  <h3>Flexible Use</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-present text-primary"></i>
-                  <h3>Free to Use</h3>
-                  <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-lock-open text-primary"></i>
-                  <h3>Open Source</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-
-  
-
-  <footer>
-    <div class="container">
-      <p>© Your Website 2019. All Rights Reserved.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="https://blackrockdigital.github.io/startbootstrap-new-age/#">Privacy</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://blackrockdigital.github.io/startbootstrap-new-age/#">Terms</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://blackrockdigital.github.io/startbootstrap-new-age/#">FAQ</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="./jquery.min.js"></script>
-  <script src="./bootstrap.bundle.min(1).js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="./jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="./new-age.min.js"></script>
-
-
-
-
-</body></html>
+</body>
